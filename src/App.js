@@ -1,9 +1,10 @@
-import React from 'react';
-import { marked } from 'marked';
-import './index.css';
+import React from "react";
+import { marked } from "marked";
+import "./index.css";
 
 function App() {
-  const [markdown, setMarkdown] = React.useState(`# Welcome to my Markdown Previewer!
+  const [markdown, setMarkdown] =
+    React.useState(`# Welcome to my Markdown Previewer!
 
 ## This is a subheading
 [I'm a link](https://example.com)
@@ -22,8 +23,6 @@ function helloWorld() {
 > This is a blockquote
 
 **This is bold text**
-
-![React Logo](https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg)
 `);
 
   return (
@@ -41,6 +40,6 @@ function helloWorld() {
       ></div>
     </div>
   );
-};
+}
 
 export default App; // 🔵 Required so index.js can load this
